@@ -1,27 +1,20 @@
 var express = require("express");
 var app     = express();
 var path    = require("path");
-var http    = require("http");
-var mime    = require('mime-types');
-
-mime.lookup('css/main.css');
-
 
 app.get('/',function(req,res){
-  res.sendFile(path.join(__dirname+'/index.html'));
-  //__dirname : It will resolve to your project folder.
+  res.sendFile(path.join(__dirname, '/index.html'));
+  //__dirname : The directory the file is in
 });
 
 app.get('/about',function(req,res){
-  res.sendFile(path.join(__dirname+'/about.html'));
+  res.sendFile(path.join(__dirname, '/about.html'));
 });
 
 app.get('/sitemap',function(req,res){
-  res.sendFile(path.join(__dirname+'/sitemap.html'));
+  res.sendFile(path.join(__dirname, '/sitemap.html'));
 });
 
-
-
-app.listen(3000);
-
-console.log("Running at Port 3000");
+app.listen(3000, function () {
+	console.log("Running at Port 3000");
+});
