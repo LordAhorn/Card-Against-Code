@@ -1,6 +1,21 @@
 var express = require("express");
-var app     = express();
-var path    = require("path");
+var app = express();
+var path = require("path");
+var mysql = require('mysql');
+
+var con = mysql.createConnection({
+  host: "192.168.179.60:3306",
+  user: "root",
+  password: "Saphira1007"
+});
+
+con.connect(function (err) {
+  if (err)  {
+    console.log(err);
+  } else {
+    console.log('Connected');
+  }
+});
 
 app.get('/',function(req,res){
   //__dirname : The directory the file is in
