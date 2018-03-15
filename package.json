@@ -1,0 +1,26 @@
+{
+  "name": "card-against-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mime-types": "^2.1.18",
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LordAhorn/Card-Against-Code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LordAhorn/Card-Against-Code/issues"
+  },
+  "homepage": "https://github.com/LordAhorn/Card-Against-Code#readme"
+}
